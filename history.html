@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsEq</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2 py-3">
+        <div class="container-fluid">
+            <!-- Logo on the left -->
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="imgs/nav-logo.svg" alt="Logo" height="40">
+                </a>
+            </div>
+    
+            <!-- Toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Links centered on the screen -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" aria-current="page" href="contact-us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" href="years.html">Years</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" href="#">Quizzes</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5 d-lg-none">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5 d-lg-none">
+                        <a class="nav-link" href="notifications.html">Notifications</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5 d-lg-none">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- User image on the right -->
+            <div class="d-none d-lg-flex">
+                <img src="imgs/user.jpg" alt="User Image"  id="nav-user-image" class="user-img ms-lg-3 pointer" width="50" height="50">
+                <ul class="dropdown-menu nav-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                    <li><a class="dropdown-item" href="notifications.html">Notifications</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="tables-cont">
+
+        <div class="history-div p-4">
+            <div class="row justify-content-center">
+                <div class="col-auto history-btn pointer active-history-div">
+                    History
+                </div>
+                <div class="col-auto start-quests-btn pointer">
+                    Starred Questions
+                </div>
+                <div class="col-auto reported-quests-btn pointer">
+                    Reported Questions
+                </div>
+            </div>
+            
+            <table class="table mt-5 history-table dataTables" id="myTable">
+                <thead>
+                    <tr>
+                        <th class="text-center">Quiz</th>
+                        <th class="text-center">Date</th>
+                        <th class="text-center">Topics</th>
+                        <th class="text-center">Category</th>
+                        <th class="text-center">Status</th>
+                        <th class="text-center">Analytics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Year 1 - chapter 1</td>
+                        <td class="text-center">6 April, 2023</td>
+                        <td class="text-center">lesson 1</td>
+                        <td class="text-center">General</td>
+                        <td class="text-center">100%</td>
+                        <td class="text-center">
+                            <a href="" class="btn btn-green">Show Analytics</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="stared-div d-none p-5">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="d-flex justify-content-between">
+                                <h1>Today</h1>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer selected-option p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reported-div d-none p-5">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="d-flex justify-content-between">
+                                <h1>Today</h1>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer ">
+                                    <i class="fa-regular fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer selected-option p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer ">
+                                    <i class="fa-regular fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer ">
+                                    <i class="fa-regular fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-4 rounded-4  question-div mt-3"> 
+                            <div class="row">
+                                <div class="col">
+                                    6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus sapien, vulputate quis ex a, pulvinar pellentesque
+                                </div>
+                                <div class="col-auto star-div pointer starred">
+                                    <i class="fa-solid fa-star fa-lg text-warning"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">A</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">B</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">C</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                                <div class="col-12 my-3 option pointer p-3 rounded-4">
+                                    <span class="d-inline-block me-3 order-span">D</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class=" p-5">
+        Copyright  2024 All Rights Reserved. Pulseq.
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable({
+                searching: false, // Disable search
+                pagingType: 'full_numbers', // Full pagination style with numbers
+                pageLength: 10, 
+                info: false, // Hide "Showing 1 to 10 of 15 entries"
+                ordering: false, lengthMenu: [10, 20, 50, 100], // Options for the length menu
+                language: {
+                    lengthMenu: 'Showing <select>'+
+                                '<option value="10">10</option>'+
+                                '<option value="20">20</option>'+
+                                '<option value="50">50</option>'+
+                                '<option value="100">100</option>'+
+                                '</select> entries of _TOTAL_'
+                }, dom: '<"top"i>rt<"bottom clearfix"lp><"clear">'
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

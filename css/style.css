@@ -228,10 +228,104 @@ footer{
     background-color: #000;
     color: #fff !important;
 }
-.profile-div{
-    min-height: 70vh;
+.profile-div,.tables-cont{
+    min-height: 75vh;
 }
 .profile-div .form-control:focus , .profile-div .form-select:focus{
    box-shadow: none;
    border-color: #00EF60;
+}
+.active-history-div{
+    color: #00ef60;
+    border-bottom: 1px solid #00ef60;
+}
+
+
+.dt-paging-button {
+    padding: 0.5rem 1rem;
+    border-radius: 10px !important;
+    margin: 0 5px;
+    background-color: #d5d5d5 !important;
+    color: #9b9b9b;
+    border: none;
+    outline: none;
+}
+div.dt-container .dt-paging .dt-paging-button:hover {
+    background-color: #00C150 !important;
+    background: #00C150 !important;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button.current:hover{
+    background-color: #00C150 !important;
+    background: #00C150 !important;
+    border-color: #00C150 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #00C150 !important;
+    color: #fff;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #28a745;
+    color: white;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    background-color: #ccc;
+    color: #fff;
+    pointer-events: none;
+}
+.dataTables_wrapper .dataTables_length {
+    float: left;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+}
+.clearfix{
+    margin: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+.clearfix::after{
+    display: none;
+}
+
+.clearfix select{
+    border: 1px solid #00C150 !important;
+    outline: none;
+    padding: 3px;
+    border-radius: 10px;
+}
+.question-div{
+    background-color: #D8EEE1;
+    color: #164863;
+    font-weight: bolder;
+    font-size: 28px;
+}
+.question-div .option{
+    background-color: #FDFDFD !important;
+    color: #164863;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.question-div  .selected-option{
+    background-color: #ddf2fd !important;
+}
+.question-div  .option span{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+.question-div  .selected-option span{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+.new-notification{
+    background: #D6FFE6;
+    border-color: #D6FFE6 !important;
 }
