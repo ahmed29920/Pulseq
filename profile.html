@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsEq</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2 py-3">
+        <div class="container-fluid">
+            <!-- Logo on the left -->
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="imgs/nav-logo.svg" alt="Logo" height="40">
+                </a>
+            </div>
+    
+            <!-- Toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Links centered on the screen -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" aria-current="page" href="contact-us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" href="years.html">Years</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" href="#">Quizzes</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5">
+                        <a class="nav-link" href="#">History</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5 d-lg-none">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5 d-lg-none">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="nav-item mx-md-3 fs-5 d-lg-none">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- User image on the right -->
+            <div class="d-none d-lg-flex">
+                <img src="imgs/user.jpg" alt="User Image" id="nav-user-image" class="user-img ms-lg-3 pointer" width="50" height="50">
+                <ul class="dropdown-menu nav-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    
+    <div class="container profile-div py-5 my-5">
+        <form action="" method="post">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <span>
+                            <div class="d-flex">
+                                <span>
+                                    <img src="imgs/user2.png" alt="User Image" class="user-img ms-lg-3   rounded rounded-circle  " width="70" height="70">
+                                </span>
+                                <span class="align-content-center mx-3">
+                                    <h4 class="mb-1">Alexa Rawles</h4>
+                                    <p class="m-0">alexarawles@gmail.com</p>
+                                </span>
+                            </div>
+                        </span>
+                        <span class="align-content-center">
+                            <button class="btn btn-green px-4 edit-btn">
+                                Edit
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="row">
+                        <div class="col-lg-6 my-3">
+                            <label class="text-start d-block" for="email">Full name</label>
+                            <input type="text" class="form-control p-2 mt-2 " id="email" value="Alexa Rawles" disabled>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <label class="text-start d-block" for="email">Email</label>
+                            <input type="email" class="form-control p-2 mt-2 " id="email" value="alexarawles@gmail.com" disabled>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <label class="text-start d-block" for="gender">Gender</label>
+                            <select name="" id="gender" class="form-select p-2 mt-2" disabled>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <label class="text-start d-block" for="country">Country</label>
+                            <select name="" id="country" class="form-select p-2 mt-2" disabled>
+                                <option value="male">Cairo</option>
+                                <option value="female">Alex</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <label class="text-start d-block" for="university">University</label>
+                            <input type="text" class="form-control p-2 mt-2 " id="university" value="University Name" disabled>
+                        </div>
+                        <div class="col-lg-6 my-3">
+                            <label class="text-start d-block" for="phone">Phone</label>
+                            <input type="text" class="form-control p-2 mt-2 " id="phone" value="01234567890" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <span class="align-content-center">
+                            <button class="btn mt-2 mx-md-0 mx-1 btn-danger px-4">
+                                <svg width="32" height="25" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.6912 0.916992C18.3116 0.916992 21.2643 3.81908 21.2643 7.39199V14.3774H12.3617C11.7237 14.3774 11.2192 14.8732 11.2192 15.5003C11.2192 16.1128 11.7237 16.6232 12.3617 16.6232H21.2643V23.5941C21.2643 27.167 18.3116 30.0837 14.6615 30.0837H7.43559C3.80036 30.0837 0.847656 27.1816 0.847656 23.6087V7.40658C0.847656 3.81908 3.8152 0.916992 7.45043 0.916992H14.6912ZM24.9688 10.4694C25.4063 10.0173 26.1209 10.0173 26.5584 10.4548L30.8167 14.6985C31.0354 14.9173 31.1521 15.1944 31.1521 15.5006C31.1521 15.7923 31.0354 16.084 30.8167 16.2881L26.5584 20.5319C26.3396 20.7506 26.0479 20.8673 25.7709 20.8673C25.4792 20.8673 25.1875 20.7506 24.9688 20.5319C24.5313 20.0944 24.5313 19.3798 24.9688 18.9423L27.3021 16.6235H21.2646V14.3777H27.3021L24.9688 12.059C24.5313 11.6215 24.5313 10.9069 24.9688 10.4694Z" fill="#FDFDFD"/>
+                                </svg>
+                                Logout
+                            </button>
+                        </span>
+                        <span class="align-content-center">
+                            <button class="btn mt-2 mx-md-0 mx-1 btn-green px-5 save-btn d-none">
+                                Save Changes
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class=" p-5">
+        Copyright  2024 All Rights Reserved. Pulseq.
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

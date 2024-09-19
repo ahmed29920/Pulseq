@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('./Poppins-Regular.ttf');
+}
+*{
+    font-family: 'poppins';
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-img {
+    border-radius: 18px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.nav-menu {
+    right: 1vw;
+    top: 8vh;
+}
+
+.nav-link {
+    color: #00C150;
+}
+.banner-btn{
+    color: #00C150;
+
+}
+
+.home {
+    background-image: url("../imgs/panner.svg");
+    background-size: cover;
+    height: 92vh;
+    align-items: center;
+    background-position: center;
+    position: relative;
+}
+
+.shadow-effect {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.home-description {
+    z-index: 3;
+}
+
+.home-description h1 {
+    color: #00ef60;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.home-description h4 {
+    color: #d5d5d5;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.home-description button {
+    border-radius: 10px;
+}
+
+.stpes-home {
+    background-color: black;
+    color: #fff;
+}
+
+.stpes-home h1{
+    font-size: 72;
+    font-weight: 700;
+}
+.stpes-home p{
+    font-size: 24;
+    font-weight: 400;
+    color: #d5d5d5;
+    line-height: 36px;
+}
+.step h6{
+    font-size: 24;
+    font-weight: 400;
+    color: #9b9b9b;
+    line-height: 25px;
+}
+.rounded-5 {
+    border-radius: 18px !important;
+}
+
+.card-title {
+    color: #00C150;
+}
+
+.step-number {
+    background-color: #00EF60; /* Green background */
+    color: white; /* White text */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 3;
+    margin: 0 0 10px 0; 
+    position: relative;
+}
+
+.step-container {
+    position: relative;
+}
+
+.step-num-div::before {
+    content: '';
+    position: absolute;
+    top: 4vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 2px;
+    background-color: #28a745;
+    z-index: 2;
+}
+.first-step-num-div::before {
+    left: 55%;
+}
+
+.step {
+    position: relative;
+    z-index: 1;
+}
+
+.plans-home h1{
+    font-size: 72;
+    font-weight: 700;
+    color: #00C150;
+}
+.contact-us h1{
+    font-size: 72;
+    font-weight: 700;
+}
+
+.plans-home p{
+    font-size: 24;
+    font-weight: 400;
+    color: #d5d5d5;
+}
+.form-cont{
+    background-color: #F8F8F8;
+
+}
+footer{
+    margin-top: 5vh;
+    background-color: #000;
+    color: #00ef60;
+}
+.btn-green{
+    background-color: #00C150;
+    color: #fff;
+}
+.btn-green:hover{
+    background-color: #00C150;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .home-description h1 {
+        font-weight: 400;
+        font-size: 42px;
+    }
+    .home-description h4 {
+        font-weight: 300;
+        font-size: 25px;
+    }
+    .stpes-home h1{
+        font-size: 42;
+        font-weight: 400;
+    }
+    .step-num-div::before {
+        left: 55%;
+        width: 90%;
+    }
+}
+.login-row{
+    height: 100vh;
+}
+.img-col {
+    
+}
+.img-col img{
+    width: 100%;
+    height: 100%;
+    object-fit : cover;
+}
+.login-row input[type="email"],.login-row input[type="password"],.login-row input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #000 !important;
+    border-radius: 0;
+}
+.login-row input[type="email"],.login-row input[type="password"],.login-row input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #000 !important;
+    border-radius: 0;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.login-row input[type="checkbox"]:focus{
+    background-color: #00C150;
+    outline-color: #00C150;
+    border-color: #00C150;
+    box-shadow: none;
+}
+.login-row a{
+    color: #00EF60;
+}
+.contact-us-pg , .plans-home-pg{
+    background-color: #000;
+    color: #fff !important;
+}
+.profile-div{
+    min-height: 70vh;
+}
+.profile-div .form-control:focus , .profile-div .form-select:focus{
+   box-shadow: none;
+   border-color: #00EF60;
+}
